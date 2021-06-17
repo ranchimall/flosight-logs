@@ -1,0 +1,101 @@
+[2021-06-17T16:07:35.264Z] error: Input values missing from tx.
+[2021-06-17T16:07:35.265Z] info: Block Service: The best block hash is: a9f05def41a8657e75b8812f1e82db6684ffbb021358cdf2ea779e4f8403e0ab at height: 4805229. Time between the last 2 blocks (adjusted): 6 second(s). 0 millisecond(s).
+[2021-06-17T16:07:35.732Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.220 "curl/7.52.1"
+[info] (chain) Block db16f9f9e748ede696c06be75c38aa8bcfb160ec93a200fcde2fd8ac871d193a (4805230) added to chain (size=330 txs=1 time=2.044279).
+[2021-06-17T16:07:40.504Z] error: Input values missing from tx.
+[2021-06-17T16:07:40.505Z] info: Block Service: The best block hash is: db16f9f9e748ede696c06be75c38aa8bcfb160ec93a200fcde2fd8ac871d193a at height: 4805230. Time between the last 2 blocks (adjusted): 4 second(s). 0 millisecond(s).
+[info] (chain) Block 52a62900c286123088e84db9db04a635d4698c7185a160ec822b5bb1cc6bd5dd (4805231) added to chain (size=330 txs=1 time=2.064568).
+[2021-06-17T16:07:43.704Z] error: Input values missing from tx.
+[2021-06-17T16:07:43.705Z] info: Block Service: The best block hash is: 52a62900c286123088e84db9db04a635d4698c7185a160ec822b5bb1cc6bd5dd at height: 4805231. Time between the last 2 blocks (adjusted): 5 second(s). 0 millisecond(s).
+[info] (chain) Block bac4f812865282aa72160ce8e41f65d8964e5cff6d4d7711db7afdc92c0f1d50 (4805232) added to chain (size=330 txs=1 time=2.079496).
+[2021-06-17T16:07:44.853Z] error: Input values missing from tx.
+[2021-06-17T16:07:44.856Z] info: Block Service: The best block hash is: bac4f812865282aa72160ce8e41f65d8964e5cff6d4d7711db7afdc92c0f1d50 at height: 4805232. Time between the last 2 blocks (adjusted): 3 second(s). 0 millisecond(s).
+[info] (chain) Block 0c07038faa100903d8ede58187ded6cff468899c133de5fd4d79997746e0cb2b (4805233) added to chain (size=329 txs=1 time=2.334021).
+[2021-06-17T16:07:45.761Z] error: Input values missing from tx.
+[2021-06-17T16:07:45.762Z] info: Block Service: The best block hash is: 0c07038faa100903d8ede58187ded6cff468899c133de5fd4d79997746e0cb2b at height: 4805233. Time between the last 2 blocks (adjusted): 1 second(s). 0 millisecond(s).
+[info] (chain) Block d2b4ddc01914c13f779afd09ea522c6315b15ad8a4930d1a6373e355dc9fb300 (4805234) added to chain (size=329 txs=1 time=3.681313).
+[2021-06-17T16:07:48.185Z] info: Block Service: The best block hash is: d2b4ddc01914c13f779afd09ea522c6315b15ad8a4930d1a6373e355dc9fb300 at height: 4805234. Time between the last 2 blocks (adjusted): 1 second(s). 0 millisecond(s).
+[2021-06-17T16:07:48.185Z] error: Input values missing from tx.
+[info] (chain) Block c22761f9073dae84cc2e1498352d2aee57bb3263de19b4b80bed6a062917d653 (4805235) added to chain (size=330 txs=1 time=2.273757).
+[2021-06-17T16:07:50.362Z] error: Input values missing from tx.
+[2021-06-17T16:07:50.363Z] info: Block Service: The best block hash is: c22761f9073dae84cc2e1498352d2aee57bb3263de19b4b80bed6a062917d653 at height: 4805235. Time between the last 2 blocks (adjusted): 4 second(s). 0 millisecond(s).
+[info] (chain) Block 018537b253f66e90de7d45c60a54486132e0a7720b5c1e5432249d2f47c5e38b (4805236) added to chain (size=330 txs=1 time=2.129551).
+[2021-06-17T16:07:51.020Z] error: Input values missing from tx.
+[2021-06-17T16:07:51.021Z] info: Block Service: The best block hash is: 018537b253f66e90de7d45c60a54486132e0a7720b5c1e5432249d2f47c5e38b at height: 4805236. Time between the last 2 blocks (adjusted): 1 second(s). 0 millisecond(s).
+[info] (chain) Block d244b5b18dced5af0f8476fea62636a87e76dcb2925dbcb2ed0f2faa1dc454ff (4805237) added to chain (size=330 txs=1 time=2.746915).
+[2021-06-17T16:07:52.919Z] error: Input values missing from tx.
+[2021-06-17T16:07:52.920Z] info: Block Service: The best block hash is: d244b5b18dced5af0f8476fea62636a87e76dcb2925dbcb2ed0f2faa1dc454ff at height: 4805237. Time between the last 2 blocks (adjusted): 1 second(s). 0 millisecond(s).
+[info] (chain) Block f185593171873696bda278b7a4ef26599c55519e6c7024b9bf49cc52b20dc4e2 (4805238) added to chain (size=330 txs=1 time=2.062393).
+[2021-06-17T16:07:54.203Z] error: Input values missing from tx.
+[2021-06-17T16:07:54.204Z] info: Block Service: The best block hash is: f185593171873696bda278b7a4ef26599c55519e6c7024b9bf49cc52b20dc4e2 at height: 4805238. Time between the last 2 blocks (adjusted): 1 second(s). 0 millisecond(s).
+[2021-06-17T16:08:05.820Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.225 "curl/7.52.1"
+[2021-06-17T16:08:35.918Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.228 "curl/7.52.1"
+[2021-06-17T16:07:50.363Z] info: Block Service: The best block hash is: c22761f9073dae84cc2e1498352d2aee57bb3263de19b4b80bed6a062917d653 at height: 4805235. Time between the last 2 blocks (adjusted): 4 second(s). 0 millisecond(s).
+[info] (chain) Block 018537b253f66e90de7d45c60a54486132e0a7720b5c1e5432249d2f47c5e38b (4805236) added to chain (size=330 txs=1 time=2.129551).
+[2021-06-17T16:07:51.021Z] info: Block Service: The best block hash is: 018537b253f66e90de7d45c60a54486132e0a7720b5c1e5432249d2f47c5e38b at height: 4805236. Time between the last 2 blocks (adjusted): 1 second(s). 0 millisecond(s).
+[info] (chain) Block d244b5b18dced5af0f8476fea62636a87e76dcb2925dbcb2ed0f2faa1dc454ff (4805237) added to chain (size=330 txs=1 time=2.746915).
+[2021-06-17T16:07:52.920Z] info: Block Service: The best block hash is: d244b5b18dced5af0f8476fea62636a87e76dcb2925dbcb2ed0f2faa1dc454ff at height: 4805237. Time between the last 2 blocks (adjusted): 1 second(s). 0 millisecond(s).
+[info] (chain) Block f185593171873696bda278b7a4ef26599c55519e6c7024b9bf49cc52b20dc4e2 (4805238) added to chain (size=330 txs=1 time=2.062393).
+[2021-06-17T16:07:54.204Z] info: Block Service: The best block hash is: f185593171873696bda278b7a4ef26599c55519e6c7024b9bf49cc52b20dc4e2 at height: 4805238. Time between the last 2 blocks (adjusted): 1 second(s). 0 millisecond(s).
+[2021-06-17T16:08:05.820Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.225 "curl/7.52.1"
+[2021-06-17T16:08:35.918Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.228 "curl/7.52.1"
+[2021-06-17T16:09:03.517Z] info: ::ffff:127.0.0.1 "GET /api/status?q=getBestBlockHash" 200 84 0.209 "curl/7.52.1"
+[2021-06-17T16:09:06.026Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.229 "curl/7.52.1"
+[2021-06-17T16:09:36.120Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.188 "curl/7.52.1"
+[2021-06-17T16:10:06.239Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.233 "curl/7.52.1"
+[2021-06-17T16:10:36.332Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 1.093 "curl/7.52.1"
+[2021-06-17T16:11:06.433Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.194 "curl/7.52.1"
+[info] (chain) Block 40b0b61c316a8d4e55f5f6fe2b9dd4f6d8d7c3e4b2a5b6fe0f3a29f11566a6a0 (4805239) added to chain (size=322 txs=1 time=2.699607).
+[2021-06-17T16:11:20.024Z] error: Input values missing from tx.
+[2021-06-17T16:11:20.025Z] info: Block Service: The best block hash is: 40b0b61c316a8d4e55f5f6fe2b9dd4f6d8d7c3e4b2a5b6fe0f3a29f11566a6a0 at height: 4805239. Time between the last 2 blocks (adjusted): 2 minute(s). 47 second(s). 0 millisecond(s).
+[2021-06-17T16:11:36.553Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.183 "curl/7.52.1"
+[info] (chain) Block 626c7f89fbcb31aca93aa0b3514252ec04b65de9e2b2b7e86cf840b61ef51da3 (4805240) added to chain (size=330 txs=1 time=2.278845).
+[2021-06-17T16:11:58.426Z] error: Input values missing from tx.
+[2021-06-17T16:11:58.427Z] info: Block Service: The best block hash is: 626c7f89fbcb31aca93aa0b3514252ec04b65de9e2b2b7e86cf840b61ef51da3 at height: 4805240. Time between the last 2 blocks (adjusted): 1 minute(s). 1 second(s). 0 millisecond(s).
+[2021-06-17T16:12:06.638Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.195 "curl/7.52.1"
+[2021-06-17T16:12:36.754Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.206 "curl/7.52.1"
+[2021-06-17T16:13:06.860Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.256 "curl/7.52.1"
+[2021-06-17T16:13:36.959Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.240 "curl/7.52.1"
+[info] (chain) Block 40b0b61c316a8d4e55f5f6fe2b9dd4f6d8d7c3e4b2a5b6fe0f3a29f11566a6a0 (4805239) added to chain (size=322 txs=1 time=2.699607).
+[2021-06-17T16:11:20.025Z] info: Block Service: The best block hash is: 40b0b61c316a8d4e55f5f6fe2b9dd4f6d8d7c3e4b2a5b6fe0f3a29f11566a6a0 at height: 4805239. Time between the last 2 blocks (adjusted): 2 minute(s). 47 second(s). 0 millisecond(s).
+[2021-06-17T16:11:36.553Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.183 "curl/7.52.1"
+[info] (chain) Block 626c7f89fbcb31aca93aa0b3514252ec04b65de9e2b2b7e86cf840b61ef51da3 (4805240) added to chain (size=330 txs=1 time=2.278845).
+[2021-06-17T16:11:58.427Z] info: Block Service: The best block hash is: 626c7f89fbcb31aca93aa0b3514252ec04b65de9e2b2b7e86cf840b61ef51da3 at height: 4805240. Time between the last 2 blocks (adjusted): 1 minute(s). 1 second(s). 0 millisecond(s).
+[2021-06-17T16:12:06.638Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.195 "curl/7.52.1"
+[2021-06-17T16:12:36.754Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.206 "curl/7.52.1"
+[2021-06-17T16:13:06.860Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.256 "curl/7.52.1"
+[2021-06-17T16:13:36.959Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.240 "curl/7.52.1"
+[2021-06-17T16:14:03.542Z] info: ::ffff:127.0.0.1 "GET /api/status?q=getBestBlockHash" 200 84 0.232 "curl/7.52.1"
+[2021-06-17T16:14:07.068Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.390 "curl/7.52.1"
+[2021-06-17T16:14:37.167Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.193 "curl/7.52.1"
+[2021-06-17T16:15:07.274Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.259 "curl/7.52.1"
+[2021-06-17T16:15:37.373Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.190 "curl/7.52.1"
+[2021-06-17T16:16:07.485Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.205 "curl/7.52.1"
+[2021-06-17T16:16:37.593Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.259 "curl/7.52.1"
+[2021-06-17T16:17:07.715Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.247 "curl/7.52.1"
+[2021-06-17T16:17:37.815Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.210 "curl/7.52.1"
+[2021-06-17T16:18:07.933Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.190 "curl/7.52.1"
+[2021-06-17T16:18:38.044Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.951 "curl/7.52.1"
+[2021-06-17T16:14:37.167Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.193 "curl/7.52.1"
+[2021-06-17T16:15:07.274Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.259 "curl/7.52.1"
+[2021-06-17T16:15:37.373Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.190 "curl/7.52.1"
+[2021-06-17T16:16:07.485Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.205 "curl/7.52.1"
+[2021-06-17T16:16:37.593Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.259 "curl/7.52.1"
+[2021-06-17T16:17:07.715Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.247 "curl/7.52.1"
+[2021-06-17T16:17:37.815Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.210 "curl/7.52.1"
+[2021-06-17T16:18:07.933Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.190 "curl/7.52.1"
+[2021-06-17T16:18:38.044Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.951 "curl/7.52.1"
+[2021-06-17T16:19:03.572Z] info: ::ffff:127.0.0.1 "GET /api/status?q=getBestBlockHash" 200 84 0.228 "curl/7.52.1"
+[2021-06-17T16:19:08.147Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.183 "curl/7.52.1"
+[info] (chain) Block 22bcb21e071889ca729771c4e6360c4564cc58a8dab322b0eaad4d7b1f1f96db (4805241) added to chain (size=1353 txs=2 time=6.825034).
+[2021-06-17T16:19:14.913Z] error: Input values missing from tx.
+[2021-06-17T16:19:14.922Z] info: Block Service: The best block hash is: 22bcb21e071889ca729771c4e6360c4564cc58a8dab322b0eaad4d7b1f1f96db at height: 4805241. Time between the last 2 blocks (adjusted): 7 minute(s). 16 second(s). 0 millisecond(s).
+[2021-06-17T16:19:38.255Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.211 "curl/7.52.1"
+[2021-06-17T16:20:08.384Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.183 "curl/7.52.1"
+[2021-06-17T16:20:38.492Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.243 "curl/7.52.1"
+[2021-06-17T16:21:08.614Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 1.118 "curl/7.52.1"
+[2021-06-17T16:21:38.730Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.166 "curl/7.52.1"
+[2021-06-17T16:22:08.840Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.226 "curl/7.52.1"
+[2021-06-17T16:22:38.928Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.243 "curl/7.52.1"
+[2021-06-17T16:23:09.040Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.226 "curl/7.52.1"
+[2021-06-17T16:23:39.169Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.186 "curl/7.52.1"
