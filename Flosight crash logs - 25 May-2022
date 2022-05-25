@@ -1,0 +1,235 @@
+Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-175-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Wed May 25 08:07:22 UTC 2022
+
+  System load:  0.36                Users logged in:        1
+  Usage of /:   89.7% of 154.90GB   IP address for eth0:    165.227.4.245
+  Memory usage: 64%                 IP address for eth1:    10.138.0.2
+  Swap usage:   0%                  IP address for docker0: 172.17.0.1
+  Processes:    193
+
+  => / is using 89.7% of 154.90GB
+  => There are 4 zombie processes.
+
+67 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+New release '20.04.4 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+*** System restart required ***
+Last login: Wed May 25 08:00:55 2022 from 49.37.76.60
+production@ranchimall-stevejobs:~$ sudo docker container ls                        [sudo] password for production:
+CONTAINER ID   IMAGE                           COMMAND                  CREATED        STATUS                   PORTS                                                                                                            NAMES
+29ab87a59b21   ranchimallfze/flosight:1.0.15   "docker-entrypoint.s…"   19 hours ago   Up 16 hours (healthy)    443/tcp, 3001/tcp, 7312-7313/tcp, 17312-17313/tcp, 17413/tcp, 41289/tcp, 0.0.0.0:9282->80/tcp, :::9282->80/tcp   flosight5
+430c87d2c267   ranchimallfze/flosight:1.0.15   "docker-entrypoint.s…"   2 months ago   Up 5 minutes (healthy)   443/tcp, 3001/tcp, 7312-7313/tcp, 17312-17313/tcp, 17413/tcp, 41289/tcp, 0.0.0.0:9283->80/tcp, :::9283->80/tcp   flosight4
+ed04a2592333   ed81bbe4c8ef                    "docker-entrypoint.s…"   2 months ago   Up 5 minutes (healthy)   443/tcp, 3001/tcp, 7312-7313/tcp, 17312-17313/tcp, 17413/tcp, 41289/tcp, 0.0.0.0:8282->80/tcp, :::8282->80/tcp   flosight1
+production@ranchimall-stevejobs:~$ sudo docker container logs 430c87d2c267 --tail 100
+[2022-05-25T08:10:29.900Z] info: ::ffff:127.0.0.1 "GET /api/block/a8d79aa8799ec175c6a6546f64ba585648bb27ab472acc9c7272887f5896497e" 200 580 1.364 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"
+[2022-05-25T08:10:29.917Z] info: ::ffff:127.0.0.1 "GET /api/blocks?limit=5" 200 - 7.460 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"
+[2022-05-25T08:10:30.112Z] info: ::ffff:127.0.0.1 "GET /api/addr/FHxUhuC2YbkDGJxa4661NvrpMMWcNRMYwB/balance" 200 6 33.848 "-"
+[2022-05-25T08:10:30.412Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 40.450 "-"
+[2022-05-25T08:10:30.682Z] info: ::ffff:127.0.0.1 "GET /api/addr/FJLscbaPi48LTAYrLpxCVHnRDzd9nu5VFc/balance" 200 6 3.321 "-"
+[2022-05-25T08:10:30.987Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 43.185 "-"
+[2022-05-25T08:10:31.036Z] info: ::ffff:127.0.0.1 web socket disconnect
+[2022-05-25T08:10:31.036Z] info: ::ffff:127.0.0.1 unsubscribe: p2p/transaction total: 1
+[2022-05-25T08:10:31.036Z] info: ::ffff:127.0.0.1 unsubscribe: p2p/block total: 2
+[2022-05-25T08:10:31.036Z] info: ::ffff:127.0.0.1 unsubscribe: p2p/headers total: 0[2022-05-25T08:10:31.037Z] info: ::ffff:127.0.0.1 unsubscribe: header/block total: 0
+[2022-05-25T08:10:31.037Z] info: ::ffff:127.0.0.1 unsubscribe: mempool/transaction total: 1
+[2022-05-25T08:10:31.037Z] info: ::ffff:127.0.0.1 unsubscribe: block/block total: 1[2022-05-25T08:10:31.338Z] info: ::ffff:127.0.0.1 "GET /api/addr/FM61unusL8kDNHUtYVFtDQvWmhiYJ6bLqQ/balance" 200 6 85.202 "-"
+[2022-05-25T08:10:31.640Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 38.024 "-"
+[2022-05-25T08:10:31.917Z] info: ::ffff:127.0.0.1 "GET /api/addr/FLiVadkZZiXc632FSpUJge7eSjKDR8TzLH/balance" 200 5 12.787 "-"
+[2022-05-25T08:10:32.311Z] info: ::ffff:127.0.0.1 "GET /api/addr/FM61unusL8kDNHUtYVFtDQvWmhiYJ6bLqQ/balance" 200 6 135.260 "-"
+[2022-05-25T08:10:32.578Z] info: ::ffff:127.0.0.1 "GET /api/addr/FJBXJQKZyWTwMUPvZJENvCcEdAATFgRrwY/balance" 200 4 2.613 "-"
+[2022-05-25T08:10:32.886Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 46.328 "-"
+[2022-05-25T08:10:33.172Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 23.215 "-"
+[2022-05-25T08:10:33.455Z] info: ::ffff:127.0.0.1 "GET /api/addr/FUYge4Lh4Kth42qSCpvNd6JsEFLjwR5xqm/balance" 200 6 21.410 "-"
+[2022-05-25T08:10:33.740Z] info: ::ffff:127.0.0.1 "GET /api/addr/FUYge4Lh4Kth42qSCpvNd6JsEFLjwR5xqm/balance" 200 6 22.948 "-"
+[2022-05-25T08:10:34.032Z] info: ::ffff:127.0.0.1 "GET /api/addr/FUYge4Lh4Kth42qSCpvNd6JsEFLjwR5xqm/balance" 200 6 27.614 "-"
+[2022-05-25T08:10:34.182Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.377 "curl/7.52.1"
+[2022-05-25T08:10:34.316Z] info: ::ffff:127.0.0.1 "GET /api/addr/FUYge4Lh4Kth42qSCpvNd6JsEFLjwR5xqm/balance" 200 6 19.419 "-"
+[info] (net) Received 1 addrs (hosts=516, peers=9) (34.73.149.245:7312).
+[info] (chain) Block 56d871261da36c4bc8e8bd1779ab4414c08f2664ca76136142daa3aba52acf07 (5441783) added to chain (size=241 txs=1 time=5.924375).
+[2022-05-25T08:10:58.351Z] error: Input values missing from tx.
+[2022-05-25T08:10:58.358Z] info: Block Service: The best block hash is: 56d871261da36c4bc8e8bd1779ab4414c08f2664ca76136142daa3aba52acf07 at height: 5441783. Time between the last 2 blocks (adjusted): 49 second(s). 0 millisecond(s).
+[2022-05-25T08:10:58.392Z] info: ::ffff:127.0.0.1 "GET /api/block/56d871261da36c4bc8e8bd1779ab4414c08f2664ca76136142daa3aba52acf07" 200 580 1.692 "python-requests/2.22.0"
+[2022-05-25T08:10:58.416Z] info: ::ffff:127.0.0.1 "GET /api/tx/21eac32e6680f38758044cbad724c769bd8b738c1919db13dd88ebfffdc236eb" 200 846 1.696 "python-requests/2.22.0"
+[2022-05-25T08:10:58.667Z] info: ::ffff:127.0.0.1 "GET /api/blocks?limit=5" 200 - 5.880 "Mozilla/5.0 (Linux; Android 11; 2201116SI) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36"
+[2022-05-25T08:10:58.675Z] info: ::ffff:127.0.0.1 "GET /api/block/56d871261da36c4bc8e8bd1779ab4414c08f2664ca76136142daa3aba52acf07" 200 580 1.955 "Mozilla/5.0 (Linux; Android 11; 2201116SI) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36"
+[2022-05-25T08:10:58.676Z] info: ::ffff:127.0.0.1 "GET /api/block/56d871261da36c4bc8e8bd1779ab4414c08f2664ca76136142daa3aba52acf07" 200 580 1.984 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:100.0) Gecko/20100101 Firefox/100.0"
+[2022-05-25T08:10:58.679Z] info: ::ffff:127.0.0.1 "GET /api/block/56d871261da36c4bc8e8bd1779ab4414c08f2664ca76136142daa3aba52acf07" 200 580 2.080 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:100.0) Gecko/20100101 Firefox/100.0"
+[2022-05-25T08:10:58.689Z] info: ::ffff:127.0.0.1 "GET /api/blocks?limit=5" 200 - 8.718 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:100.0) Gecko/20100101 Firefox/100.0"
+[2022-05-25T08:10:58.690Z] info: ::ffff:127.0.0.1 "GET /api/blocks?limit=5" 200 - 8.909 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:100.0) Gecko/20100101 Firefox/100.0"
+[2022-05-25T08:10:58.788Z] info: ::ffff:127.0.0.1 "GET /api/block/56d871261da36c4bc8e8bd1779ab4414c08f2664ca76136142daa3aba52acf07" 200 580 1.070 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"
+[2022-05-25T08:10:58.808Z] info: ::ffff:127.0.0.1 "GET /api/blocks?limit=5" 200 - 8.967 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"
+[2022-05-25T08:11:04.332Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.441 "curl/7.52.1"
+[2022-05-25T08:11:18.650Z] info: ::ffff:127.0.0.1 "GET /api/addr/F9XYnaKoF8YA6YX6vWNrLPtEyvE7qfNzCd/balance" 200 6 29.750 "-"
+[2022-05-25T08:11:18.968Z] info: ::ffff:127.0.0.1 "GET /api/addr/F9XYnaKoF8YA6YX6vWNrLPtEyvE7qfNzCd/balance" 200 6 19.395 "-"
+[2022-05-25T08:11:19.269Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 44.543 "-"
+[2022-05-25T08:11:19.661Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 35.006 "-"
+[2022-05-25T08:11:19.955Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 29.545 "-"
+[2022-05-25T08:11:20.320Z] info: ::ffff:127.0.0.1 "GET /api/addr/FM61unusL8kDNHUtYVFtDQvWmhiYJ6bLqQ/balance" 200 6 100.662 "-"
+[2022-05-25T08:11:20.667Z] info: ::ffff:127.0.0.1 "GET /api/addr/FM61unusL8kDNHUtYVFtDQvWmhiYJ6bLqQ/balance" 200 6 86.144 "-"
+[2022-05-25T08:11:20.966Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 38.033 "-"
+[2022-05-25T08:11:21.244Z] info: ::ffff:127.0.0.1 "GET /api/addr/F6J1nY4RvR2h4P49cDzLM27EEMnTrQpjUe/balance" 200 6 11.916 "-"
+[2022-05-25T08:11:21.515Z] info: ::ffff:127.0.0.1 "GET /api/addr/F6J1nY4RvR2h4P49cDzLM27EEMnTrQpjUe/balance" 200 6 8.540 "-"
+[2022-05-25T08:11:21.790Z] info: ::ffff:127.0.0.1 "GET /api/addr/F6J1nY4RvR2h4P49cDzLM27EEMnTrQpjUe/balance" 200 6 13.261 "-"
+[2022-05-25T08:11:22.062Z] info: ::ffff:127.0.0.1 "GET /api/addr/F6J1nY4RvR2h4P49cDzLM27EEMnTrQpjUe/balance" 200 6 9.870 "-"
+[2022-05-25T08:11:22.331Z] info: ::ffff:127.0.0.1 "GET /api/addr/F6J1nY4RvR2h4P49cDzLM27EEMnTrQpjUe/balance" 200 6 9.473 "-"
+[2022-05-25T08:11:22.601Z] info: ::ffff:127.0.0.1 "GET /api/addr/F6J1nY4RvR2h4P49cDzLM27EEMnTrQpjUe/balance" 200 6 10.132 "-"
+[2022-05-25T08:11:22.898Z] info: ::ffff:127.0.0.1 "GET /api/addr/FM93oa1SEQGXnTEas3t3ckTKbZx6NBmxjk/balance" 200 6 37.769 "-"
+[2022-05-25T08:11:23.204Z] info: ::ffff:127.0.0.1 "GET /api/addr/FM93oa1SEQGXnTEas3t3ckTKbZx6NBmxjk/balance" 200 6 47.116 "-"
+[2022-05-25T08:11:23.473Z] info: ::ffff:127.0.0.1 "GET /api/addr/FDnsBJdhMd4kQsrdN1EV7C55b3oGnMbESr/balance" 200 6 8.758 "-"
+[2022-05-25T08:11:23.764Z] info: ::ffff:127.0.0.1 "GET /api/addr/FCzABavZJspxT7XyTf74qm2fotN7DLAYhw/balance" 200 6 20.718 "-"
+[2022-05-25T08:11:24.040Z] info: ::ffff:127.0.0.1 "GET /api/addr/FCzABavZJspxT7XyTf74qm2fotN7DLAYhw/balance" 200 6 14.642 "-"
+[2022-05-25T08:11:24.310Z] info: ::ffff:127.0.0.1 "GET /api/addr/FCzABavZJspxT7XyTf74qm2fotN7DLAYhw/balance" 200 6 10.015 "-"
+[2022-05-25T08:11:24.612Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 43.673 "-"
+[2022-05-25T08:11:24.918Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 40.923 "-"
+[2022-05-25T08:11:25.190Z] info: ::ffff:127.0.0.1 "GET /api/addr/FLiVadkZZiXc632FSpUJge7eSjKDR8TzLH/balance" 200 5 9.368 "-"
+[2022-05-25T08:11:25.462Z] info: ::ffff:127.0.0.1 "GET /api/addr/FLiVadkZZiXc632FSpUJge7eSjKDR8TzLH/balance" 200 5 11.358 "-"
+[2022-05-25T08:11:25.739Z] info: ::ffff:127.0.0.1 "GET /api/addr/FLiVadkZZiXc632FSpUJge7eSjKDR8TzLH/balance" 200 5 15.904 "-"
+[2022-05-25T08:11:26.040Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 41.111 "-"
+[2022-05-25T08:11:26.484Z] info: ::ffff:127.0.0.1 "GET /api/addr/FDAezJBP2Rm3eKoYgMaaCvJ5tjF1F1EreS/balance" 200 6 47.135 "-"
+[2022-05-25T08:11:26.775Z] info: ::ffff:127.0.0.1 "GET /api/addr/FDAezJBP2Rm3eKoYgMaaCvJ5tjF1F1EreS/balance" 200 6 30.452 "-"
+[2022-05-25T08:11:27.044Z] info: ::ffff:127.0.0.1 "GET /api/addr/FQm3kxLoonAGPyQQkDL1VJ6EebKeDpZaK3/balance" 200 6 7.320 "-"
+[2022-05-25T08:11:27.342Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 35.921 "-"
+[2022-05-25T08:11:27.651Z] info: ::ffff:127.0.0.1 "GET /api/addr/FDAezJBP2Rm3eKoYgMaaCvJ5tjF1F1EreS/balance" 200 6 44.012 "-"
+[2022-05-25T08:11:27.954Z] info: ::ffff:127.0.0.1 "GET /api/addr/FDAezJBP2Rm3eKoYgMaaCvJ5tjF1F1EreS/balance" 200 6 39.312 "-"
+[2022-05-25T08:11:28.260Z] info: ::ffff:127.0.0.1 "GET /api/addr/FDAezJBP2Rm3eKoYgMaaCvJ5tjF1F1EreS/balance" 200 6 42.481 "-"
+[2022-05-25T08:11:28.556Z] info: ::ffff:127.0.0.1 "GET /api/addr/FDAezJBP2Rm3eKoYgMaaCvJ5tjF1F1EreS/balance" 200 6 33.770 "-"
+[2022-05-25T08:11:28.866Z] info: ::ffff:127.0.0.1 "GET /api/addr/FDAezJBP2Rm3eKoYgMaaCvJ5tjF1F1EreS/balance" 200 6 43.534 "-"
+[2022-05-25T08:11:29.153Z] info: ::ffff:127.0.0.1 "GET /api/addr/FUYge4Lh4Kth42qSCpvNd6JsEFLjwR5xqm/balance" 200 6 24.291 "-"
+[2022-05-25T08:11:29.450Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 34.186 "-"
+[2022-05-25T08:11:29.759Z] info: ::ffff:127.0.0.1 "GET /api/addr/FHxUhuC2YbkDGJxa4661NvrpMMWcNRMYwB/balance" 200 6 43.716 "-"
+[2022-05-25T08:11:30.065Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 45.529 "-"
+[2022-05-25T08:11:30.339Z] info: ::ffff:127.0.0.1 "GET /api/addr/FJLscbaPi48LTAYrLpxCVHnRDzd9nu5VFc/balance" 200 6 4.930 "-"
+[2022-05-25T08:11:30.683Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 53.957 "-"
+[2022-05-25T08:11:31.066Z] info: ::ffff:127.0.0.1 "GET /api/addr/FM61unusL8kDNHUtYVFtDQvWmhiYJ6bLqQ/balance" 200 6 116.931 "-"
+[2022-05-25T08:11:31.384Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 53.291 "-"
+[2022-05-25T08:11:31.667Z] info: ::ffff:127.0.0.1 "GET /api/addr/FLiVadkZZiXc632FSpUJge7eSjKDR8TzLH/balance" 200 5 16.366 "-"
+[2022-05-25T08:11:31.997Z] info: ::ffff:127.0.0.1 "GET /api/addr/FM61unusL8kDNHUtYVFtDQvWmhiYJ6bLqQ/balance" 200 6 67.126 "-"
+[2022-05-25T08:11:32.262Z] info: ::ffff:127.0.0.1 "GET /api/addr/FJBXJQKZyWTwMUPvZJENvCcEdAATFgRrwY/balance" 200 4 2.480 "-"
+[2022-05-25T08:11:32.553Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 31.848 "-"
+[2022-05-25T08:11:32.851Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 33.766 "-"
+[2022-05-25T08:11:33.140Z] info: ::ffff:127.0.0.1 "GET /api/addr/FUYge4Lh4Kth42qSCpvNd6JsEFLjwR5xqm/balance" 200 6 24.865 "-"
+[2022-05-25T08:11:33.426Z] info: ::ffff:127.0.0.1 "GET /api/addr/FUYge4Lh4Kth42qSCpvNd6JsEFLjwR5xqm/balance" 200 6 20.437 "-"
+[2022-05-25T08:11:33.715Z] info: ::ffff:127.0.0.1 "GET /api/addr/FUYge4Lh4Kth42qSCpvNd6JsEFLjwR5xqm/balance" 200 6 25.552 "-"
+[2022-05-25T08:11:34.054Z] info: ::ffff:127.0.0.1 "GET /api/addr/FUYge4Lh4Kth42qSCpvNd6JsEFLjwR5xqm/balance" 200 6 72.119 "-"
+[2022-05-25T08:11:34.454Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.587 "curl/7.52.1"
+[2022-05-25T08:11:52.351Z] info: ::ffff:127.0.0.1 "GET /api/addrs/FMxYC7gYZhouzqtHZukGnPiQ8nvG4CMzXM/txs?from=0&to=1" 200 - 11.918 "Mozilla/5.0 (Linux; Android 12; ASUS_I006D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36"
+[2022-05-25T08:11:52.728Z] info: ::ffff:127.0.0.1 "GET /api/addrs/FMxYC7gYZhouzqtHZukGnPiQ8nvG4CMzXM/txs?from=0&to=0" 200 - 14.825 "Mozilla/5.0 (Linux; Android 12; ASUS_I006D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36"
+[2022-05-25T08:11:55.072Z] info: ::ffff:127.0.0.1 "GET /api/addr/FFS5hFXG7DBtdgzrLwixZLpenAmsCKRddm/balance" 200 6 193.075 "Mozilla/5.0 (Linux; Android 12; ASUS_I006D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36"
+[2022-05-25T08:11:59.017Z] info: ::ffff:127.0.0.1 "GET /api/addrs/FMxYC7gYZhouzqtHZukGnPiQ8nvG4CMzXM/txs?from=0&to=1" 304 - 4.033 "Mozilla/5.0 (Linux; Android 12; ASUS_I006D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36"
+[2022-05-25T08:11:59.329Z] info: ::ffff:127.0.0.1 "GET /api/addrs/FMxYC7gYZhouzqtHZukGnPiQ8nvG4CMzXM/txs?from=0&to=0" 304 - 11.612 "Mozilla/5.0 (Linux; Android 12; ASUS_I006D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36"
+[2022-05-25T08:12:01.338Z] info: ::ffff:127.0.0.1 "GET /api/addr/FFS5hFXG7DBtdgzrLwixZLpenAmsCKRddm/balance" 304 - 77.348 "Mozilla/5.0 (Linux; Android 12; ASUS_I006D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36" [2022-05-25T08:12:04.609Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.603 "curl/7.52.1"
+production@ranchimall-stevejobs:~$ sudo docker container logs 430c87d2c267 --tail 100 --follow
+[2022-05-25T08:11:22.601Z] info: ::ffff:127.0.0.1 "GET /api/addr/F6J1nY4RvR2h4P49cDzLM27EEMnTrQpjUe/balance" 200 6 10.132 "-"
+[2022-05-25T08:11:22.898Z] info: ::ffff:127.0.0.1 "GET /api/addr/FM93oa1SEQGXnTEas3t3ckTKbZx6NBmxjk/balance" 200 6 37.769 "-"
+[2022-05-25T08:11:23.204Z] info: ::ffff:127.0.0.1 "GET /api/addr/FM93oa1SEQGXnTEas3t3ckTKbZx6NBmxjk/balance" 200 6 47.116 "-"
+[2022-05-25T08:11:23.473Z] info: ::ffff:127.0.0.1 "GET /api/addr/FDnsBJdhMd4kQsrdN1EV7C55b3oGnMbESr/balance" 200 6 8.758 "-"
+[2022-05-25T08:11:23.764Z] info: ::ffff:127.0.0.1 "GET /api/addr/FCzABavZJspxT7XyTf74qm2fotN7DLAYhw/balance" 200 6 20.718 "-"
+[2022-05-25T08:11:24.040Z] info: ::ffff:127.0.0.1 "GET /api/addr/FCzABavZJspxT7XyTf74qm2fotN7DLAYhw/balance" 200 6 14.642 "-"
+[2022-05-25T08:11:24.310Z] info: ::ffff:127.0.0.1 "GET /api/addr/FCzABavZJspxT7XyTf74qm2fotN7DLAYhw/balance" 200 6 10.015 "-"
+[2022-05-25T08:11:24.612Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 43.673 "-"
+[2022-05-25T08:11:24.918Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 40.923 "-"
+[2022-05-25T08:11:25.190Z] info: ::ffff:127.0.0.1 "GET /api/addr/FLiVadkZZiXc632FSpUJge7eSjKDR8TzLH/balance" 200 5 9.368 "-"
+[2022-05-25T08:11:25.462Z] info: ::ffff:127.0.0.1 "GET /api/addr/FLiVadkZZiXc632FSpUJge7eSjKDR8TzLH/balance" 200 5 11.358 "-"
+[2022-05-25T08:11:25.739Z] info: ::ffff:127.0.0.1 "GET /api/addr/FLiVadkZZiXc632FSpUJge7eSjKDR8TzLH/balance" 200 5 15.904 "-"
+[2022-05-25T08:11:26.040Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 41.111 "-"
+[2022-05-25T08:11:26.484Z] info: ::ffff:127.0.0.1 "GET /api/addr/FDAezJBP2Rm3eKoYgMaaCvJ5tjF1F1EreS/balance" 200 6 47.135 "-"
+[2022-05-25T08:11:26.775Z] info: ::ffff:127.0.0.1 "GET /api/addr/FDAezJBP2Rm3eKoYgMaaCvJ5tjF1F1EreS/balance" 200 6 30.452 "-"
+[2022-05-25T08:11:27.044Z] info: ::ffff:127.0.0.1 "GET /api/addr/FQm3kxLoonAGPyQQkDL1VJ6EebKeDpZaK3/balance" 200 6 7.320 "-"
+[2022-05-25T08:11:27.342Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 35.921 "-"
+[2022-05-25T08:11:27.651Z] info: ::ffff:127.0.0.1 "GET /api/addr/FDAezJBP2Rm3eKoYgMaaCvJ5tjF1F1EreS/balance" 200 6 44.012 "-"
+[2022-05-25T08:11:27.954Z] info: ::ffff:127.0.0.1 "GET /api/addr/FDAezJBP2Rm3eKoYgMaaCvJ5tjF1F1EreS/balance" 200 6 39.312 "-"
+[2022-05-25T08:11:28.260Z] info: ::ffff:127.0.0.1 "GET /api/addr/FDAezJBP2Rm3eKoYgMaaCvJ5tjF1F1EreS/balance" 200 6 42.481 "-"
+[2022-05-25T08:11:28.556Z] info: ::ffff:127.0.0.1 "GET /api/addr/FDAezJBP2Rm3eKoYgMaaCvJ5tjF1F1EreS/balance" 200 6 33.770 "-"
+[2022-05-25T08:11:28.866Z] info: ::ffff:127.0.0.1 "GET /api/addr/FDAezJBP2Rm3eKoYgMaaCvJ5tjF1F1EreS/balance" 200 6 43.534 "-"
+[2022-05-25T08:11:29.153Z] info: ::ffff:127.0.0.1 "GET /api/addr/FUYge4Lh4Kth42qSCpvNd6JsEFLjwR5xqm/balance" 200 6 24.291 "-"
+[2022-05-25T08:11:29.450Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 34.186 "-"
+[2022-05-25T08:11:29.759Z] info: ::ffff:127.0.0.1 "GET /api/addr/FHxUhuC2YbkDGJxa4661NvrpMMWcNRMYwB/balance" 200 6 43.716 "-"
+[2022-05-25T08:11:30.065Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 45.529 "-"
+[2022-05-25T08:11:30.339Z] info: ::ffff:127.0.0.1 "GET /api/addr/FJLscbaPi48LTAYrLpxCVHnRDzd9nu5VFc/balance" 200 6 4.930 "-"
+[2022-05-25T08:11:30.683Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 53.957 "-"
+[2022-05-25T08:11:31.066Z] info: ::ffff:127.0.0.1 "GET /api/addr/FM61unusL8kDNHUtYVFtDQvWmhiYJ6bLqQ/balance" 200 6 116.931 "-"
+[2022-05-25T08:11:31.384Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 53.291 "-"
+[2022-05-25T08:11:31.667Z] info: ::ffff:127.0.0.1 "GET /api/addr/FLiVadkZZiXc632FSpUJge7eSjKDR8TzLH/balance" 200 5 16.366 "-"
+[2022-05-25T08:11:31.997Z] info: ::ffff:127.0.0.1 "GET /api/addr/FM61unusL8kDNHUtYVFtDQvWmhiYJ6bLqQ/balance" 200 6 67.126 "-"
+[2022-05-25T08:11:32.262Z] info: ::ffff:127.0.0.1 "GET /api/addr/FJBXJQKZyWTwMUPvZJENvCcEdAATFgRrwY/balance" 200 4 2.480 "-"
+[2022-05-25T08:11:32.553Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 31.848 "-"
+[2022-05-25T08:11:32.851Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 33.766 "-"
+[2022-05-25T08:11:33.140Z] info: ::ffff:127.0.0.1 "GET /api/addr/FUYge4Lh4Kth42qSCpvNd6JsEFLjwR5xqm/balance" 200 6 24.865 "-"
+[2022-05-25T08:11:33.426Z] info: ::ffff:127.0.0.1 "GET /api/addr/FUYge4Lh4Kth42qSCpvNd6JsEFLjwR5xqm/balance" 200 6 20.437 "-"
+[2022-05-25T08:11:33.715Z] info: ::ffff:127.0.0.1 "GET /api/addr/FUYge4Lh4Kth42qSCpvNd6JsEFLjwR5xqm/balance" 200 6 25.552 "-"
+[2022-05-25T08:11:34.054Z] info: ::ffff:127.0.0.1 "GET /api/addr/FUYge4Lh4Kth42qSCpvNd6JsEFLjwR5xqm/balance" 200 6 72.119 "-"
+[2022-05-25T08:11:34.454Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.587 "curl/7.52.1"
+[2022-05-25T08:11:52.351Z] info: ::ffff:127.0.0.1 "GET /api/addrs/FMxYC7gYZhouzqtHZukGnPiQ8nvG4CMzXM/txs?from=0&to=1" 200 - 11.918 "Mozilla/5.0 (Linux; Android 12; ASUS_I006D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36"
+[2022-05-25T08:11:52.728Z] info: ::ffff:127.0.0.1 "GET /api/addrs/FMxYC7gYZhouzqtHZukGnPiQ8nvG4CMzXM/txs?from=0&to=0" 200 - 14.825 "Mozilla/5.0 (Linux; Android 12; ASUS_I006D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36"
+[2022-05-25T08:11:55.072Z] info: ::ffff:127.0.0.1 "GET /api/addr/FFS5hFXG7DBtdgzrLwixZLpenAmsCKRddm/balance" 200 6 193.075 "Mozilla/5.0 (Linux; Android 12; ASUS_I006D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36"
+[2022-05-25T08:11:59.017Z] info: ::ffff:127.0.0.1 "GET /api/addrs/FMxYC7gYZhouzqtHZukGnPiQ8nvG4CMzXM/txs?from=0&to=1" 304 - 4.033 "Mozilla/5.0 (Linux; Android 12; ASUS_I006D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36"
+[2022-05-25T08:11:59.329Z] info: ::ffff:127.0.0.1 "GET /api/addrs/FMxYC7gYZhouzqtHZukGnPiQ8nvG4CMzXM/txs?from=0&to=0" 304 - 11.612 "Mozilla/5.0 (Linux; Android 12; ASUS_I006D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36"
+[2022-05-25T08:12:01.338Z] info: ::ffff:127.0.0.1 "GET /api/addr/FFS5hFXG7DBtdgzrLwixZLpenAmsCKRddm/balance" 304 - 77.348 "Mozilla/5.0 (Linux; Android 12; ASUS_I006D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36" [2022-05-25T08:12:04.609Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.603 "curl/7.52.1"
+[2022-05-25T08:12:18.454Z] info: ::ffff:127.0.0.1 "GET /api/addr/F9XYnaKoF8YA6YX6vWNrLPtEyvE7qfNzCd/balance" 200 6 33.892 "-"
+[2022-05-25T08:12:18.776Z] info: ::ffff:127.0.0.1 "GET /api/addr/F9XYnaKoF8YA6YX6vWNrLPtEyvE7qfNzCd/balance" 200 6 21.430 "-"
+[2022-05-25T08:12:19.095Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 59.603 "-"
+[2022-05-25T08:12:19.501Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 46.448 "-"
+[2022-05-25T08:12:20.038Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 61.979 "-"
+[2022-05-25T08:12:20.431Z] info: ::ffff:127.0.0.1 "GET /api/addr/FM61unusL8kDNHUtYVFtDQvWmhiYJ6bLqQ/balance" 200 6 125.427 "-"
+[2022-05-25T08:12:20.791Z] info: ::ffff:127.0.0.1 "GET /api/addr/FM61unusL8kDNHUtYVFtDQvWmhiYJ6bLqQ/balance" 200 6 96.638 "-"
+[2022-05-25T08:12:21.084Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 37.158 "-"
+[2022-05-25T08:12:21.364Z] info: ::ffff:127.0.0.1 "GET /api/addr/F6J1nY4RvR2h4P49cDzLM27EEMnTrQpjUe/balance" 200 6 14.251 "-"
+[2022-05-25T08:12:21.640Z] info: ::ffff:127.0.0.1 "GET /api/addr/F6J1nY4RvR2h4P49cDzLM27EEMnTrQpjUe/balance" 200 6 14.151 "-"
+[2022-05-25T08:12:21.910Z] info: ::ffff:127.0.0.1 "GET /api/addr/F6J1nY4RvR2h4P49cDzLM27EEMnTrQpjUe/balance" 200 6 9.057 "-"
+[2022-05-25T08:12:22.179Z] info: ::ffff:127.0.0.1 "GET /api/addr/F6J1nY4RvR2h4P49cDzLM27EEMnTrQpjUe/balance" 200 6 10.240 "-"
+[2022-05-25T08:12:22.449Z] info: ::ffff:127.0.0.1 "GET /api/addr/F6J1nY4RvR2h4P49cDzLM27EEMnTrQpjUe/balance" 200 6 10.164 "-"
+[2022-05-25T08:12:22.718Z] info: ::ffff:127.0.0.1 "GET /api/addr/F6J1nY4RvR2h4P49cDzLM27EEMnTrQpjUe/balance" 200 6 6.743 "-"
+[2022-05-25T08:12:23.051Z] info: ::ffff:127.0.0.1 "GET /api/addr/FM93oa1SEQGXnTEas3t3ckTKbZx6NBmxjk/balance" 200 6 71.948 "-"
+[2022-05-25T08:12:23.372Z] info: ::ffff:127.0.0.1 "GET /api/addr/FM93oa1SEQGXnTEas3t3ckTKbZx6NBmxjk/balance" 200 6 40.141 "-"
+[2022-05-25T08:12:23.647Z] info: ::ffff:127.0.0.1 "GET /api/addr/FDnsBJdhMd4kQsrdN1EV7C55b3oGnMbESr/balance" 200 6 13.091 "-"
+[2022-05-25T08:12:23.949Z] info: ::ffff:127.0.0.1 "GET /api/addr/FCzABavZJspxT7XyTf74qm2fotN7DLAYhw/balance" 200 6 26.390 "-"
+[2022-05-25T08:12:24.228Z] info: ::ffff:127.0.0.1 "GET /api/addr/FCzABavZJspxT7XyTf74qm2fotN7DLAYhw/balance" 200 6 16.914 "-"
+[2022-05-25T08:12:24.523Z] info: ::ffff:127.0.0.1 "GET /api/addr/FCzABavZJspxT7XyTf74qm2fotN7DLAYhw/balance" 200 6 23.943 "-"
+[2022-05-25T08:12:24.830Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 44.523 "-"
+[2022-05-25T08:12:25.125Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 30.692 "-"
+[2022-05-25T08:12:25.404Z] info: ::ffff:127.0.0.1 "GET /api/addr/FLiVadkZZiXc632FSpUJge7eSjKDR8TzLH/balance" 200 5 12.717 "-"
+[2022-05-25T08:12:25.677Z] info: ::ffff:127.0.0.1 "GET /api/addr/FLiVadkZZiXc632FSpUJge7eSjKDR8TzLH/balance" 200 5 7.612 "-"
+[2022-05-25T08:12:25.954Z] info: ::ffff:127.0.0.1 "GET /api/addr/FLiVadkZZiXc632FSpUJge7eSjKDR8TzLH/balance" 200 5 8.664 "-"
+[2022-05-25T08:12:26.252Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 35.260 "-"
+[2022-05-25T08:12:26.569Z] info: ::ffff:127.0.0.1 "GET /api/addr/FDAezJBP2Rm3eKoYgMaaCvJ5tjF1F1EreS/balance" 200 6 52.479 "-"
+[2022-05-25T08:12:26.870Z] info: ::ffff:127.0.0.1 "GET /api/addr/FDAezJBP2Rm3eKoYgMaaCvJ5tjF1F1EreS/balance" 200 6 42.696 "-"
+[2022-05-25T08:12:27.135Z] info: ::ffff:127.0.0.1 "GET /api/addr/FQm3kxLoonAGPyQQkDL1VJ6EebKeDpZaK3/balance" 200 6 6.300 "-"
+[2022-05-25T08:12:27.442Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 42.913 "-"
+[2022-05-25T08:12:27.738Z] info: ::ffff:127.0.0.1 "GET /api/addr/FDAezJBP2Rm3eKoYgMaaCvJ5tjF1F1EreS/balance" 200 6 29.708 "-"
+[2022-05-25T08:12:28.029Z] info: ::ffff:127.0.0.1 "GET /api/addr/FDAezJBP2Rm3eKoYgMaaCvJ5tjF1F1EreS/balance" 200 6 27.769 "-"
+[2022-05-25T08:12:28.327Z] info: ::ffff:127.0.0.1 "GET /api/addr/FDAezJBP2Rm3eKoYgMaaCvJ5tjF1F1EreS/balance" 200 6 34.705 "-"
+[2022-05-25T08:12:28.617Z] info: ::ffff:127.0.0.1 "GET /api/addr/FDAezJBP2Rm3eKoYgMaaCvJ5tjF1F1EreS/balance" 200 6 25.860 "-"
+[2022-05-25T08:12:28.919Z] info: ::ffff:127.0.0.1 "GET /api/addr/FDAezJBP2Rm3eKoYgMaaCvJ5tjF1F1EreS/balance" 200 6 31.667 "-"
+[2022-05-25T08:12:29.222Z] info: ::ffff:127.0.0.1 "GET /api/addr/FUYge4Lh4Kth42qSCpvNd6JsEFLjwR5xqm/balance" 200 6 36.129 "-"
+[2022-05-25T08:12:29.719Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 26.423 "-"
+[2022-05-25T08:12:30.045Z] info: ::ffff:127.0.0.1 "GET /api/addr/FHxUhuC2YbkDGJxa4661NvrpMMWcNRMYwB/balance" 200 6 56.338 "-"
+[2022-05-25T08:12:30.344Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 38.747 "-"
+[2022-05-25T08:12:30.620Z] info: ::ffff:127.0.0.1 "GET /api/addr/FJLscbaPi48LTAYrLpxCVHnRDzd9nu5VFc/balance" 200 6 5.587 "-"
+[2022-05-25T08:12:30.945Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 61.079 "-"
+[2022-05-25T08:12:31.309Z] info: ::ffff:127.0.0.1 "GET /api/addr/FM61unusL8kDNHUtYVFtDQvWmhiYJ6bLqQ/balance" 200 6 97.313 "-"
+[2022-05-25T08:12:31.610Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 36.899 "-"
+[2022-05-25T08:12:31.882Z] info: ::ffff:127.0.0.1 "GET /api/addr/FLiVadkZZiXc632FSpUJge7eSjKDR8TzLH/balance" 200 5 10.168 "-"
+[2022-05-25T08:12:32.256Z] info: ::ffff:127.0.0.1 "GET /api/addr/FM61unusL8kDNHUtYVFtDQvWmhiYJ6bLqQ/balance" 200 6 112.259 "-"
+[2022-05-25T08:12:32.524Z] info: ::ffff:127.0.0.1 "GET /api/addr/FJBXJQKZyWTwMUPvZJENvCcEdAATFgRrwY/balance" 200 4 3.670 "-"
+[2022-05-25T08:12:32.829Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 44.322 "-"
+[2022-05-25T08:12:33.126Z] info: ::ffff:127.0.0.1 "GET /api/addr/FBL45szT4jDQmViVirUxPeJjn1tkCDMxeT/balance" 200 6 32.047 "-"
+[2022-05-25T08:12:33.433Z] info: ::ffff:127.0.0.1 "GET /api/addr/FUYge4Lh4Kth42qSCpvNd6JsEFLjwR5xqm/balance" 200 6 44.383 "-"
+[2022-05-25T08:12:33.743Z] info: ::ffff:127.0.0.1 "GET /api/addr/FUYge4Lh4Kth42qSCpvNd6JsEFLjwR5xqm/balance" 200 6 44.892 "-"
+[2022-05-25T08:12:34.042Z] info: ::ffff:127.0.0.1 "GET /api/addr/FUYge4Lh4Kth42qSCpvNd6JsEFLjwR5xqm/balance" 200 6 32.371 "-"
+[2022-05-25T08:12:34.330Z] info: ::ffff:127.0.0.1 "GET /api/addr/FUYge4Lh4Kth42qSCpvNd6JsEFLjwR5xqm/balance" 200 6 22.546 "-"
+[2022-05-25T08:12:34.722Z] info: ::ffff:127.0.0.1 "GET /api/sync" 200 121 0.504 "curl/7.52.1"
+[2022-05-25T08:12:45.665Z] info: ::ffff:127.0.0.1 web socket disconnect
+[2022-05-25T08:12:45.665Z] info: ::ffff:127.0.0.1 unsubscribe: p2p/transaction total: 1
+[2022-05-25T08:12:45.665Z] info: ::ffff:127.0.0.1 unsubscribe: p2p/block total: 2
+[2022-05-25T08:12:45.665Z] info: ::ffff:127.0.0.1 unsubscribe: p2p/headers total: 0[2022-05-25T08:12:45.665Z] info: ::ffff:127.0.0.1 unsubscribe: header/block total: 0
+[2022-05-25T08:12:45.665Z] info: ::ffff:127.0.0.1 unsubscribe: mempool/transaction total: 1
+[2022-05-25T08:12:45.665Z] info: ::ffff:127.0.0.1 unsubscribe: block/block total: 1^P
